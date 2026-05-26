@@ -6,7 +6,7 @@ import streamlit as st
 
 @st.cache_resource
 def load_model():
-    with open("build.pkl", "wb") as model_file:
+    with open("build.pkl", "rb") as model_file:
         return pickle.load(model_file)
 
 
